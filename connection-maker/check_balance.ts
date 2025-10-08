@@ -1,7 +1,7 @@
 import { clusterApiUrl, Connection, LAMPORTS_PER_SOL, PublicKey } from "@solana/web3.js";
 
-const publicKeyMyString = new PublicKey("So11111111111111111111111111111111111111112");
-const connection = new Connection(clusterApiUrl("mainnet-beta"));
+const publicKeyMyString = new PublicKey("J8oRhiYkHY1czR2faHrKcB6V4D2tvJnK7ckDecatqSJW");
+const connection = new Connection(clusterApiUrl("devnet"));
 console.log("Connection object is: confirmed");
 const balance = await connection.getBalance(publicKeyMyString);
 console.log(`Balance is: ${balance}`);
